@@ -1,0 +1,57 @@
+* {
+    margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+    font-family: "TASA Explorer", sans-serif;
+}
+
+#course-title {
+    display: block;
+    padding: 1rem;
+    font-size: 2rem;
+    text-align: center;
+}
+
+h1, h2 {
+    padding: 10px;
+    text-align: center;
+}
+
+nav {
+    background-color: cornflowerblue;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav a {
+    display: block;
+    padding: 1rem;
+    color: black;
+    text-decoration: none;
+    text-align: center;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+main {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.card div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+img[src="images/profile.webp"] {
+    width: 250px;
+}
