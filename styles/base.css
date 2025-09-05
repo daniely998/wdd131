@@ -55,3 +55,7 @@ main {
 img[src="images/profile.webp"] {
     width: 250px;
 }
+
+.required ul {
+    list-style: none;
+}
