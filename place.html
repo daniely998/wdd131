@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WDD 131 week 3 assignment, country page">
+    <meta name="author" content="Daniel Yim">
+    <title>WDD 131 Country Page</title>
+    <link rel="stylesheet" href="styles/place.css">
+    <script src="scripts/place.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital@0;1&family=TASA+Explorer:wght@400..800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Japan</h1>
+    </header>
+    <main>
+        <div class="hero">
+            <picture>
+                <source media="(min-width: 500px)" srcset="images/japan-large.webp">
+                <img src="images/japan-small.webp" alt="view of Mount Fuji in Japan">
+            </picture>
+        </div>
+        <section class="data">
+            <h2>Data</h2>
+            <ul>
+                <li>Area: 145,937 sq mi</li>
+                <li>Population: 123,360,000</li>
+                <li>Capital: Tokyo</li>
+                <li>Languages: Japanese</li>
+                <li>Currency: Japanese Yen</li>
+                <li>Time Zone: UTC+9</li>
+                <li>Calling Code: +81</li>
+                <li>Internet TLD: .jp</li>
+            </ul>
+        </section>
+        <section class="weather">
+            <h2>Weather</h2>
+            <img src="images/weather-icon.svg" alt="weather">
+            <ul>
+                <li>Temperature: <span id="temperature"></span>°C</li>
+                <li>Conditions: <span id="conditions"></span></li>
+                <li>Wind: <span id="windspeed"></span> km/h</li>
+                <li>Wind Chill: <span id="windchill"></span>°C</li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>&copy;<span id="currentyear"></span> Daniel Yim - Hong Kong</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
