@@ -98,6 +98,12 @@ const temples = [
 
 createTempleCard(temples);
 
+const allTemples = document.querySelector("#home");
+allTemples.addEventListener("click", () => {
+	createTempleCard(temples);
+});
+
+
 const oldTemples = document.querySelector("#oldtemples");
 oldTemples.addEventListener("click", () => {
 	createTempleCard(temples.filter(temple => parseInt(temple.dedicated) < 1900));
