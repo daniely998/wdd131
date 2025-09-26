@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+    font-family: "TASA Explorer", sans-serif;
+}
+
+#menu {
+	font-size: 1.5rem;
+	border: 0;
+	background: none;
+	color: #000;
+	position: absolute;
+	top: 5px;
+	right: 1rem;
+    text-decoration: none;
+}
+
+#menu::before {
+	content: "☰";
+}
+
+#menu.open::before {
+	content: "\00d7";
+    font-size: 2.5rem;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    justify-content: space-around;
+    background-color: lightblue;
+}
+
+nav a {
+    display: none;
+    padding: 1rem;
+    color: black;
+    text-decoration: none;
+    text-align: center;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.open a {
+	display: block;
+}
+
+main {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+h1, h2, h3, footer {
+    text-align: center;
+}
+
+.res-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    place-items: center;
+}
+
+section {
+    background-color: rgb(239, 239, 239);
+    border: 0.1px solid rgb(184, 184, 184);
+    width: 300px;
+    height: 300px;
+    margin: 1rem;
+    text-align: center;
+}
+
+h3 {
+    margin-top: 0.5rem;
+}
+
+section p {
+    margin: 0.5rem;
+}
+
+img {
+    width: 250px;
+    max-height: 150px;
+}
