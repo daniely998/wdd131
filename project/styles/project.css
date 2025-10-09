@@ -1,0 +1,76 @@
+:root {
+    --primary-color: green;
+    --secondary-color: white;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "TASA Explorer", sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header, footer {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    text-align: center;
+}
+
+header {
+    padding-top: 0.5rem;
+}
+
+footer {
+    padding: 0.5rem;
+}
+
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    flex-grow: 1;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav a {
+    display: block;
+    padding: 0.7rem;
+    color: var(--secondary-color);
+    text-decoration: none;
+}
+
+.home {
+    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.home img {
+    margin: 1rem;
+}
+
+.home p {
+    margin: 1rem;
+}
+
+@media screen and (max-width: 500px) {
+    .home {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .home div {
+        text-align: center;
+        margin: 1rem;
+    }
+}
