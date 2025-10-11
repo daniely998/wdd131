@@ -31,7 +31,6 @@ footer {
 }
 
 main {
-    max-width: 800px;
     margin: 0 auto;
     flex-grow: 1;
 }
@@ -49,7 +48,9 @@ nav a {
     text-decoration: none;
 }
 
+/* Home page style */
 .home {
+    max-width: 800px;
     align-items: center;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -59,12 +60,61 @@ nav a {
     margin: 1rem;
 }
 
+.welcome {
+    text-align: center;
+    padding-bottom: 5rem;
+}
+
 .home p {
     margin: 1rem;
 }
 
+/* Card page style */
+.sort {
+    margin: 0.5rem;
+}
+
+#options {
+    margin-left: 0.3rem;
+    padding: 0.3rem;
+}
+
+.cards div{
+    max-width: 1100px;
+    text-align: center;
+}
+
+.cards img {
+    margin: 1rem;
+}
+
+/* Form style */
+fieldset {
+    border: none;
+    padding: .5rem 2%;
+}
+
+input[type="text"] {
+    border: solid 1px #999;
+    width: 100%;
+    padding: .5rem;
+    appearance: none;
+}
+
+.address {
+    margin-bottom: 0.1rem;
+}
+
+input[type="submit"] {
+    padding: 0.5rem;
+    width: 96%;
+    margin: 1rem 2% 2rem 2%;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
 @media screen and (max-width: 500px) {
-    .home {
+    .home, .deck div {
         display: flex;
         flex-direction: column;
     }
